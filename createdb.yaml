@@ -5,7 +5,7 @@
       ec2_group:
         name: dbsg
         description: an example EC2 group
-        vpc_id: kubecluster.synechron1.tk
+        vpc_id: vpc-0d19453e41b70ae92
         region: us-east-1
         rules:
           - proto: tcp
@@ -21,8 +21,8 @@
         name: dbsubnet
         description: My Fancy Ex Parrot Subnet Group
         subnets:
-          - subnet-ad778c83
-          - subnet-e8d25ea2
+          - subnet-021ff02709355830c
+          - subnet-024b4b89ed0b2a05e
       register: dbsubnet
     - debug:
         var: dbsubnet
